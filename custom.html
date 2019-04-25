@@ -1,0 +1,90 @@
+<!-- 
+James Williams
+CSc 337, Spring 2019
+Final Project
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta charset="utf-8">
+	  <title>CSc 337 Computer Store</title>
+	  <link href="final.css" rel="stylesheet">
+	  <link rel="shortcut icon" href="https://www.freeiconspng.com/uploads/pc-icon-12.png">
+	  <script type="text/javascript" src="final.js"></script>
+	</head>
+	<body>
+		<a href="final.html">
+			<div id="title">
+				<h1 id = "home">CSc 337 Computer Store</h1>
+			</div>
+		</a>
+		<div id="app">
+			<div id="actor-selector">
+				<fieldset class = "all-movies">
+					<legend>CPU</legend>
+					<div id="cpu">
+					  <input type="radio" id="9900k" name="cpus" value="450.00"> Intel i9 9900k ($450.00)
+					  <input type="radio" id="9700k" name="cpus" value="400.00"> Intel i7 9700k ($400.00)
+					  <input type="radio" id="8700k" name="cpus" value="350.00"> Intel i7 8700k ($350.00)
+					</div>						
+				</fieldset>
+				
+				<fieldset class = "all-movies">
+					<legend>Motherboard</legend>
+					<div id="motherboard">
+					  <input type="radio" id="m1" name="motherboards" value="180.00"> AORUS Z370 Gaming 7 ($180.00)
+					  <input type="radio" id="m2" name="motherboards" value="150.00"> AORUS Z370 Gaming 5 ($150.00)
+					  <input type="radio" id="m3" name="motherboards" value="130.00"> AORUS Z370 Gaming 3 ($130.00)
+					</div>						
+				</fieldset>
+				
+				<fieldset class = "all-movies">
+					<legend>GPU</legend>
+					<div id="gpu">
+					  <input type="radio" id="2080ti" name="gpus" value="1200.00"> RTX 2080ti ($1,2000.00)
+					  <input type="radio" id="2080" name="gpus" value="700.00"> RTX 2080 ($700.00)
+					  <input type="radio" id="2070" name="gpus" value="500.00"> RTX 2070 ($500.00)
+					  <input type="radio" id="2060" name="gpus" value="350.00"> RTX 2060 ($350.00)
+					  <input type="radio" id="1080ti" name="gpus" value="800.00"> GTX 1080ti ($700.00)
+					  <input type="radio" id="1080" name="gpus" value="500.00"> GTX 1080 ($500.00)
+					</div>						
+				</fieldset>
+				
+				<fieldset class = "all-movies">
+					<legend>Case</legend>
+					<div id="case">
+					  <input type="radio" id="MeshifyC" name="cases" value="100.00"> Fractal Design Meshify C ($100.00)
+					  <input type="radio" id="DesignC" name="cases" value="80.00"> Fractal Design C ($80.00)
+					  <input type="radio" id="Corsair" name="cases" value="150.00"> Corsair 570x ($150.00)
+					</div>						
+				</fieldset>
+				
+				<fieldset class = "all-movies">
+					<legend>Hard Drives</legend>
+					<div id="drive">
+					  <input type="checkbox" id="4hdd" name="drives" value="4hdd"> 4TB HDD ($140.00)
+					  <input type="checkbox" id="3hdd" name="drives" value="3hdd"> 3TB HDD ($120.00)
+					  <input type="checkbox" id="2hdd" name="drives" value="2hdd"> 2TB HDD ($80.00)
+					  <input type="checkbox" id="1hdd" name="drives" value="1hdd"> 1TB HDD ($50.00)
+					  <input type="checkbox" id="1sdd" name="drives" value="1hdd"> 1TB SDD ($200.00)
+					  <input type="checkbox" id="512sdd" name="drives" value="1hdd"> 512GB SDD ($130.00)
+					  <input type="checkbox" id="256sdd" name="drives" value="1hdd"> 256GB SDD ($80.00)
+					  <input type="checkbox" id="128sdd" name="drives" value="1hdd"> 128GB SDD ($45.00)
+					</div>						
+				</fieldset>
+				
+				<fieldset class = "all-movies">
+					<legend>Power Supplies</legend>
+					<div id="pow">				  
+					  <input type="radio" id="e750" name="power" value="120.00"> EVGA Supernova G3 750W ($120.00)
+					  <input type="radio" id="e550" name="power" value="70.00"> EVGA Supernova G2 550W ($70.00)
+					</div>						
+				</fieldset>
+				<button onclick="myFunction(this)" class="dropbtn">Generate Build</button>
+			</div>
+			<div id="total">
+				<p id="price">Total Price: </p>
+			</div>
+		</div>
+	</body>
+</html>
